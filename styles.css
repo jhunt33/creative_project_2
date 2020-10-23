@@ -19,11 +19,12 @@ body {
 }
 
 .pageContainer {
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  flex: 1 0 auto;
 }
 
 .footer {
@@ -49,6 +50,9 @@ body {
 
 #dogImage {
   margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 #welcome {
