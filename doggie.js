@@ -1,6 +1,8 @@
 document.getElementById("dogSubmit").addEventListener("click", function(event) {
   event.preventDefault()
   let input = document.getElementById('dogInput').value;
+  input = input.toLowerCase();
+  input = input.replace(/\s+/g, '');
 
   if (input === "random") {
     let url = "https://dog.ceo/api/breeds/image/random";
